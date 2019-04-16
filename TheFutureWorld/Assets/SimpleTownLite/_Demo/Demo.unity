@@ -1993,7 +1993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a06d96d87ba754180706662ee03995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivity: 1
+  sensitivity: 0.2
 --- !u!4 &778992378 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 601b00ca0b9de0247beae089ec7e640f, type: 2}
