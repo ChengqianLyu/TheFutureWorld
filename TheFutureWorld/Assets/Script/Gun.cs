@@ -42,6 +42,7 @@ public class Gun : MonoBehaviour
         //Debug.DrawRay(firePoint.position, firePoint.forward * 100, Color.red, 2f);
         muzzleParticle.Play();
         Ray ray = Camera.main.ViewportPointToRay(Vector3.one * 0.5f);
+        Debug.DrawRay(ray.origin, ray.direction * 100, Color.red, 2f);
         //Ray ray = new Ray(firePoint.position, firePoint.forward);
         RaycastHit hitinfo;
 
