@@ -26,24 +26,24 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        //var horizontal = Input.GetAxis("Mouse X");
-        //var vertical = Input.GetAxis("Vertical");
-        //var movement = new Vector3(horizontal, 0, vertical);
+        var horizontal = Input.GetAxis("Mouse X");
+        var vertical = Input.GetAxis("Vertical");
+        var movement = new Vector3(horizontal, 0, vertical);
 
-        //animator.SetFloat("Speed", vertical);
+        animator.SetFloat("Speed", vertical);
 
-        //transform.Rotate(Vector3.up, horizontal * turnSpeed * Time.deltaTime);
+        transform.Rotate(Vector3.up, horizontal * turnSpeed * Time.deltaTime);
 
-        //if (vertical != 0)
-        //{
-        //characterController.SimpleMove(transform.forward * moveSpeed * vertical);
-        //}
-        float xAxis = Input.GetAxis("Horizontal");
-        float zAxis = Input.GetAxis("Vertical");
-        Vector3 pos = transform.position;
-        pos.x += xAxis * moveSpeed * Time.deltaTime;
-        pos.z += zAxis * moveSpeed * Time.deltaTime;
-        transform.position = pos;
+        if (vertical != 0)
+        {
+            characterController.SimpleMove(transform.forward * moveSpeed * vertical);
+        }
+       // float xAxis = Input.GetAxis("Horizontal");
+        //float zAxis = Input.GetAxis("Vertical");
+        //Vector3 pos = transform.position;
+        //pos.x += xAxis * moveSpeed * Time.deltaTime;
+        //pos.z += zAxis * moveSpeed * Time.deltaTime;
+        //transform.position = pos;
 
     }
 }
