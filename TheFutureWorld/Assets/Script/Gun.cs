@@ -14,8 +14,11 @@ public class Gun : MonoBehaviour
 
     [SerializeField]
     private ParticleSystem muzzleParticle;
-
+    [SerializeField]
+    GameObject bullethole;
+    
     private float timer;
+    public float lifetime = 1f;
 
     // Use this for initialization
     void Start()
@@ -35,6 +38,10 @@ public class Gun : MonoBehaviour
                 Fire();
             }
         }
+        if (timer >= lifetime)
+        {
+            Destroy(bullethole);
+        }
     }
 
     private void Fire()
@@ -53,6 +60,10 @@ public class Gun : MonoBehaviour
             if (health != null)
             {
                 health.TakeDamage(damage);
+            }
+            if(health == null)
+            {
+                Instantiate(bullethole, hitinfo.point, Quaternion.FromToRotation(Vector3.up, hitinfo.normal));
             }
         }
     }
