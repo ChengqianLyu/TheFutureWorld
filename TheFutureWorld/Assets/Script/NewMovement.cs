@@ -3,6 +3,7 @@ using System.Collections;
 
 public class NewMovement : MonoBehaviour
 {
+    private Animator animator;
     [SerializeField] private float runSpeed = 8f;                                       
     [SerializeField] private float strafeSpeed = 4f;                                    
     [SerializeField] private float jumpPower = 5f;                                      
@@ -31,7 +32,7 @@ public class NewMovement : MonoBehaviour
         capsule = GetComponent<Collider>() as CapsuleCollider;
         grounded = true;
         rayHitComparer = new RayHitComparer();
-
+        animator = GetComponentInChildren<Animator>();
         if (lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
@@ -72,7 +73,7 @@ public class NewMovement : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         bool jump = Input.GetButton("Jump");
-
+        animator.SetFloat("Speed", v);
         input = new Vector2(h, v);
 
        
