@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 100;
     [SerializeField]
-    private float turnSpeed = 5;
+    private float turnSpeed = 3;
 
     private void Awake()
     {
