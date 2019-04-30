@@ -568,17 +568,10 @@ MonoBehaviour:
   damage: 1
   muzzleParticle: {fileID: 198000010555884938, guid: 95c9572b9dfb45a439e921fba994e8e0,
     type: 2}
-<<<<<<< HEAD
-<<<<<<< HEAD
-  bullethole: {fileID: 0}
-  lifetime: 1
-=======
+
   bullethole: {fileID: 1156302623141542, guid: 5bce1f216e81e98449db8133a1bb7329, type: 2}
   lifetime: 28
->>>>>>> 48c3775cd5cf18c47e0981adb1daeec7a8bf6364
-=======
->>>>>>> parent of 48c3775... add jump and bullethole
---- !u!1001 &231282605
+
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
