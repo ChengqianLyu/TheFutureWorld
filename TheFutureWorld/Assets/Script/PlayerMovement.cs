@@ -38,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
         {
             characterController.SimpleMove(transform.forward * moveSpeed * vertical);
         }
+        int i = 0;
        // float xAxis = Input.GetAxis("Horizontal");
         //float zAxis = Input.GetAxis("Vertical");
         //Vector3 pos = transform.position;
