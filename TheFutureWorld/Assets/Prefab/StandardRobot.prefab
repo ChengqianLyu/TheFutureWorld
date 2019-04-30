@@ -37,8 +37,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4696121695662288}
-  - component: {fileID: 136717109733739402}
-  - component: {fileID: 114396318433945376}
+  - component: {fileID: 136872333173830772}
+  - component: {fileID: 114544805071971392}
   m_Layer: 0
   m_Name: StandardRobot
   m_TagString: Untagged
@@ -194,9 +194,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1326931055854198}
-  m_LocalRotation: {x: -0, y: 0.7210852, z: -0, w: 0.6928464}
-  m_LocalPosition: {x: -32.166595, y: 15.699761, z: -23.58125}
-  m_LocalScale: {x: 0.9298654, y: 0.44916695, z: 0.70224607}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.78}
+  m_LocalScale: {x: 0.9298653, y: 0.44916695, z: 0.70224595}
   m_Children:
   - {fileID: 4279144411658856}
   - {fileID: 4895136104708956}
@@ -206,7 +206,7 @@ Transform:
   - {fileID: 4111868834207708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 92.288, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4788643952456776
 Transform:
   m_ObjectHideFlags: 1
@@ -509,7 +509,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114396318433945376
+--- !u!114 &114544805071971392
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3cd4731e892494ebd6fd6fb7debb23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 1
+  startingHealth: 5
 --- !u!136 &136055257595958960
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -560,7 +560,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!136 &136717109733739402
+--- !u!136 &136872333173830772
 CapsuleCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -569,8 +569,8 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.75
-  m_Height: 0
+  m_Radius: 0.5
+  m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136874662682728642
