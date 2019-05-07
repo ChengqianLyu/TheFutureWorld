@@ -30,6 +30,22 @@ public class EnemyMovement : MonoBehaviour {
         {
             return;
         }
+        if(other.tag == "MovePosX")//X is direction code 1
+        {
+
+        }
+        else if(other.tag == "MoveNegX")//-X is direction code 2
+        {
+
+        }
+        else if(other.tag == "MovePosZ")//Z is direction code 3
+        {
+
+        }
+        else if(other.tag == "MoveNegZ")//-Z is direction code 4.
+        {
+
+        }
         lastTriggerGo = go;
         changeDirection();
         this.transform.Rotate(0, -90, 0, Space.Self);
