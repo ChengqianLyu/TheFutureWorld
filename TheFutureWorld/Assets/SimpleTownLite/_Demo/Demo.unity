@@ -529,6 +529,7 @@ GameObject:
   - component: {fileID: 219643208}
   - component: {fileID: 219643203}
   - component: {fileID: 219643202}
+  - component: {fileID: 219643209}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -667,6 +668,18 @@ MonoBehaviour:
     type: 2}
   bullethole: {fileID: 1156302623141542, guid: 5bce1f216e81e98449db8133a1bb7329, type: 2}
   lifetime: 28
+--- !u!114 &219643209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219643201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c422f51dafde59f4d9d4738100b83280, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameRestartDelay: 2
 --- !u!1 &252529961 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1417471348441898, guid: 87d9d07f64121f649a3e100bfd76333d,
@@ -2539,6 +2552,7 @@ GameObject:
   - component: {fileID: 853553269}
   - component: {fileID: 853553268}
   - component: {fileID: 853553267}
+  - component: {fileID: 853553273}
   - component: {fileID: 853553272}
   m_Layer: 0
   m_Name: Camera
@@ -2647,6 +2661,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Cinemachine.CinemachineBrain+VcamEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &853553273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 853553266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d6ed94d42c41324f91a0610ec470e81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &858947505 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1297317906569292, guid: 600e9d251b2fad44ca356a2ce3d499d2,
@@ -2728,7 +2753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
-  directionCode: 2
+  directionCode: 1
 --- !u!54 &951825260
 Rigidbody:
   m_ObjectHideFlags: 0
