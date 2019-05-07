@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour {
     static public Hero S;
-    public float gameRestartDelay = 0.1f;
+    public float gameRestartDelay = 2f;
     // Use this for initialization
     void Start () {
         if(S == null)
@@ -20,7 +20,7 @@ public class Hero : MonoBehaviour {
         if(collision.gameObject.tag == "Enemy")
         {
             Destroy(this.gameObject);
-            
+            Main.S.DelayedRestart(gameRestartDelay);
         }
     }
 
