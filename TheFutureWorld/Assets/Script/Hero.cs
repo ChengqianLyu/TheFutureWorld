@@ -11,18 +11,24 @@ public class Hero : MonoBehaviour {
             S = this;
         }
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-    void OnTriggerEnter(Collider other)
+
+
+    /*void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Enemy")
         {
             print("Should Destroy!");
-            Destroy(S);
+            Destroy(S.gameObject);
+        }
+    }*/
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Destroy(this.gameObject);
         }
     }
+
 }
