@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour {
     [Header("Set in Inspector")]
     public float speed = 1f;
     // Use this for initialization
-    private int directionCode = 1; //1 is +x, 2 is -x, 3 is +z, 4 is -z.
+    public int directionCode = 1; //1 is +x, 2 is -x, 3 is +z, 4 is -z.
     private GameObject lastTriggerGo = null;
 
     void Start () {
