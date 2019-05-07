@@ -47,6 +47,14 @@ public class EnemyMovement : MonoBehaviour {
         {
             pos.z += speed * Time.deltaTime;
         }
+        else if (directionCode == 3)
+        {
+            pos.x -= speed * Time.deltaTime;
+        }
+        else if (directionCode == 4)
+        {
+            pos.z -= speed * Time.deltaTime;
+        }
          transform.position = pos;
     }
 
@@ -55,6 +63,18 @@ public class EnemyMovement : MonoBehaviour {
         if(directionCode == 1)
         {
             directionCode = 2;
+        }
+        else if(directionCode == 2)
+        {
+            directionCode = 3;
+        }
+        else if(directionCode == 3)
+        {
+            directionCode = 4;
+        }
+        else if(directionCode == 4)
+        {
+            directionCode = 1;
         }
     }
 }
