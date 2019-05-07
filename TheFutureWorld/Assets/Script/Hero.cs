@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Hero : MonoBehaviour {
     static public Hero S;
-	// Use this for initialization
-	void Start () {
+    public float gameRestartDelay = 0.1f;
+    // Use this for initialization
+    void Start () {
         if(S == null)
         {
             S = this;
@@ -14,20 +15,12 @@ public class Hero : MonoBehaviour {
 
 
 
-    /*void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Enemy")
-        {
-            print("Should Destroy!");
-            Destroy(S.gameObject);
-        }
-    }*/
-
     void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "Enemy")
         {
             Destroy(this.gameObject);
+            
         }
     }
 
