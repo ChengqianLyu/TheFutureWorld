@@ -18,18 +18,20 @@ public class Gun : MonoBehaviour
     GameObject bullethole;
     
     private float timer;
+    //private float bulletTimer;
     public float lifetime = 1f;
 
     // Use this for initialization
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
+        //bulletTimer += Time.deltaTime;
         if (timer >= fireRate)
         {
             if (Input.GetButton("Fire1"))
@@ -38,10 +40,10 @@ public class Gun : MonoBehaviour
                 Fire();
             }
         }
-        if (timer >= lifetime)
-        {
-            Destroy(bullethole);
-        }
+        //if (bulletTimer >= lifetime)
+        //{
+           // Destroy(bullethole);
+        //}
     }
 
     private void Fire()

@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Hero : MonoBehaviour {
-
+    static public Hero S;
 	// Use this for initialization
 	void Start () {
-		
+        if(S == null)
+        {
+            S = this;
+        }
 	}
 	
 	// Update is called once per frame
@@ -16,11 +19,10 @@ public class Hero : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        Transform rootT = other.gameObject.transform.root;
-        GameObject go = rootT.gameObject;
-        if(go.tag == "Enemy")
+        if(other.tag == "Enemy")
         {
-            Destroy(this.gameObject);
+            print("Should Destroy!");
+            Destroy(S);
         }
     }
 }
