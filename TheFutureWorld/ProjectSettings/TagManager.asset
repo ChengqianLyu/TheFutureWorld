@@ -10,6 +10,10 @@ TagManager:
   - Enemy
   - Team2
   - Ground
+  - MovePosZ
+  - MoveNegX
+  - MoveNegZ
+  - MovePosX
   layers:
   - Default
   - TransparentFX
