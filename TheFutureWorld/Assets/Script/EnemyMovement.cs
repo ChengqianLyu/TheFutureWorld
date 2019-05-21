@@ -43,12 +43,12 @@ public class EnemyMovement : MonoBehaviour {
             }
             else if (directionCode == 3)
             {
-                this.transform.Rotate(0, -90, 0, Space.Self);
+                this.transform.Rotate(0, 90, 0, Space.Self);
                 //-90 is +x to +z. "Positive is clockwise."
             } 
             else if (directionCode == 4)
             {
-                this.transform.Rotate(0, 90, 0, Space.Self);
+                this.transform.Rotate(0, -90, 0, Space.Self);
             }
             directionCode = 1;
         }
@@ -65,11 +65,11 @@ public class EnemyMovement : MonoBehaviour {
             }
             else if (directionCode == 3)
             {
-                this.transform.Rotate(0, 90, 0, Space.Self);//
+                this.transform.Rotate(0, -90, 0, Space.Self);//
             }
             else if (directionCode == 4)
             {
-                this.transform.Rotate(0, -90, 0, Space.Self);
+                this.transform.Rotate(0, 90, 0, Space.Self);
             }
             directionCode = 2;
         }
@@ -99,12 +99,12 @@ public class EnemyMovement : MonoBehaviour {
         {
             if (directionCode == 1)
             {
-               this.transform.Rotate(0,-90,0,Space.Self);
+               this.transform.Rotate(0,90,0,Space.Self);
             }
 
             else if (directionCode == 2)
             {
-                this.transform.Rotate(0, 90, 0, Space.Self);
+                this.transform.Rotate(0, -90, 0, Space.Self);
             }
             else if (directionCode == 3)
             {
